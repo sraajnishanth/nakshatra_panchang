@@ -357,14 +357,11 @@ def refine_auspicious_times(scraped_data, tharai_chart):
 st.title("Panchang Dashboard with Custom Tharai Charts")
 st.markdown("""
 This dashboard scrapes Tamil Panchang details from Prokerala for multiple days.
-You can select your nakshatra, and the calculations will be made against its corresponding Tharai Chart.
-It displays:
-- Full Panchang details by date
-- Basic analysis of nakshatra and time periods
-- **True Auspicious Intervals (Intersection)** with detailed reasoning
+You can select your nakshatra from the loaded Tharai charts file, and all calculations will be made against that chart.
+The dashboard displays user-friendly formatted Panchang details and analysis.
 """)
 
-# Select your nakshatra; options are the keys from the JSON file.
+# --- User Inputs ---
 selected_nakshatra = st.selectbox("Select your nakshatra", options=list(THARAI_CHARTS.keys()))
 selected_chart = THARAI_CHARTS[selected_nakshatra]
 
@@ -376,52 +373,49 @@ if st.button("Scrape Panchang Data"):
         scraped_results = scrape_multiple_days(num_days=num_days, start_date=selected_date)
     st.success("Scraping complete!")
     
-    days = list(scraped_results.keys())
-    if not days:
-        st.warning("No data found.")
-    else:
-        tabs = st.tabs(days)
-        for i, day in enumerate(days):
-            with tabs[i]:
-                st.subheader(f"Panchang for {day}")
-                data_for_day = scraped_results[day]
-                primary = data_for_day.get("primary_header", {})
-                secondary = data_for_day.get("secondary_header", {})
-                st.markdown("**Primary Details**")
-                st.write(primary)
-                st.markdown("**Secondary Details**")
-                st.write(secondary)
-                details = data_for_day.get("details", {})
-                if details:
-                    st.markdown("**Detailed Panchang Data**")
-                    for title, items in details.items():
-                        st.markdown(f"***{title}***")
-                        st.write(items)
-                gowri = data_for_day.get("gowri_panchang", {})
-                if gowri:
-                    st.markdown("**Gowri Panchangam**")
-                    for tab_id, entries in gowri.items():
-                        st.markdown(f"***{tab_id}***")
-                        st.write(entries)
-                additional = data_for_day.get("additional_tabs", {})
-                if additional:
-                    st.markdown("**Additional Information**")
-                    for tab_id, paragraphs in additional.items():
-                        st.markdown(f"***{tab_id}***")
-                        for para in paragraphs:
-                            st.write(para)
+    # Create a separate analysis tab first, followed by daily tabs.
+    analysis_tab_title = f"{selected_nakshatra}-Auspicious Times"
+    day_titles = sorted(scraped_results.keys())
+    all_tab_titles = [analysis_tab_title] + day_titles
+    tabs = st.tabs(all_tab_titles)
+    
+    # --- Analysis Tab ---
+    with tabs[0]:
+        st.header(f"{selected_nakshatra} - Auspicious Times Analysis")
+        
+        refined = refine_auspicious_times(scraped_results, selected_chart)
+        if refined:
+            st.subheader("True Auspicious Intervals (Intersection)")
+            df_refined = pd.DataFrame(refined)
+            st.dataframe(df_refined)
+        else:
+            st.info("No overlapping auspicious intervals found.")
         
         nak_info = get_nakshatra_auspicious_info(scraped_results, selected_chart)
         if nak_info:
-            st.markdown("## Nakshatra Analysis (Basic)")
+            st.subheader("Basic Nakshatra Analysis")
             df_nak = pd.DataFrame(nak_info)
             st.dataframe(df_nak)
         else:
             st.info("No nakshatra information found.")
         
+        # --- Display Selected Tharai Chart with Meaning ---
+        st.subheader("Selected Tharai Chart")
+        chart_rows = []
+        for entry in selected_chart:
+            chart_rows.append({
+                "Tharai": entry["tharai"],
+                "Nakshatra Numbers": ", ".join(str(n) for n in entry["nakshatra_numbers"]),
+                "Nakshatra Names": ", ".join(entry["nakshatra_names"]),
+                "Meaning": entry.get("meaning", "N/A"),
+                "Auspicious": "Yes" if entry["auspicious"] else "No"
+            })
+        df_chart = pd.DataFrame(chart_rows)
+        st.table(df_chart)
+        
         time_periods = get_time_periods(scraped_results)
         if time_periods:
-            st.markdown("## Time Periods from Panchang (Basic)")
+            st.subheader("Basic Time Periods from Panchang")
             df_time = pd.DataFrame(time_periods)
             st.dataframe(df_time)
         else:
@@ -429,16 +423,53 @@ if st.button("Scrape Panchang Data"):
         
         auspicious_summary = get_auspicious_dates_and_times(scraped_results, selected_chart)
         if auspicious_summary:
-            st.markdown("## Auspicious Dates and Corresponding Auspicious Times (Basic)")
+            st.subheader("Auspicious Dates and Corresponding Auspicious Times (Basic)")
             df_ausp = pd.DataFrame(auspicious_summary)
             st.dataframe(df_ausp)
         else:
             st.info("No auspicious summary found.")
-        
-        refined = refine_auspicious_times(scraped_results, selected_chart)
-        if refined:
-            st.markdown("## True Auspicious Intervals (Intersection)")
-            df_refined = pd.DataFrame(refined)
-            st.dataframe(df_refined)
-        else:
-            st.info("No overlapping auspicious intervals found.")
+    
+    # --- Daily Panchang Details Tabs ---
+    for i, day in enumerate(day_titles):
+        with tabs[i+1]:
+            st.subheader(f"Panchang for {day}")
+            data_for_day = scraped_results[day]
+            
+            primary = data_for_day.get("primary_header", {})
+            if primary:
+                st.markdown("### Primary Details")
+                st.markdown(f"**Date:** {primary.get('date','')}")
+                st.markdown(f"**Location:** {primary.get('location','')}")
+            
+            secondary = data_for_day.get("secondary_header", {})
+            if secondary:
+                st.markdown("### Secondary Details")
+                sec_table = pd.DataFrame(list(secondary.items()), columns=["Label", "Value"])
+                st.table(sec_table)
+            
+            details = data_for_day.get("details", {})
+            if details:
+                st.markdown("### Detailed Panchang Data")
+                for title, items in details.items():
+                    with st.expander(title):
+                        for item in items:
+                            if "name" in item and "time" in item:
+                                st.markdown(f"- **{item['name']}**: {item['time']}")
+                            else:
+                                st.write(item.get("text",""))
+            
+            gowri = data_for_day.get("gowri_panchang", {})
+            if gowri:
+                st.markdown("### Gowri Panchangam")
+                for tab_id, entries in gowri.items():
+                    with st.expander(tab_id):
+                        for entry in entries:
+                            st.markdown(f"- **{entry['period']}**: {entry['time']} (Status: {entry.get('status','')})")
+            
+            additional = data_for_day.get("additional_tabs", {})
+            if additional:
+                st.markdown("### Additional Information")
+                for tab_id, paragraphs in additional.items():
+                    with st.expander(tab_id):
+                        for para in paragraphs:
+                            st.write(para)

@@ -1,58 +1,67 @@
 {
-    "Poorattathi": [
+    "Poorattadhi": [
         {
             "tharai": "Birth Tharai",
             "nakshatra_numbers": [1, 10, 19],
-            "nakshatra_names": ["Poorattathi", "Punarpoosam", "Vishakam"],
-            "auspicious": true
+            "nakshatra_names": ["Poorattadhi", "Punarpoosam", "Vishakam"],
+            "auspicious": true,
+            "meaning": "Birth Nakshatra; signifies the fundamental nature of life and health."
         },
         {
             "tharai": "Wealth Tharai",
             "nakshatra_numbers": [2, 11, 20],
             "nakshatra_names": ["Uthirattathi", "Poosam", "Anusham"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Wealth-related Tharai; associated with financial growth and prosperity."
         },
         {
             "tharai": "Accident Tharai",
             "nakshatra_numbers": [3, 12, 21],
             "nakshatra_names": ["Revathi", "Ayilyam", "Kettai"],
-            "auspicious": false
+            "auspicious": false,
+            "meaning": "🚨 Indicates challenges and obstacles in life. 🚨"
         },
         {
             "tharai": "Safety Tharai",
             "nakshatra_numbers": [4, 13, 22],
             "nakshatra_names": ["Aswini", "Magam", "Moolam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Provides good health, peace, and protection."
         },
         {
             "tharai": "Obstacle Tharai",
             "nakshatra_numbers": [5, 14, 23],
             "nakshatra_names": ["Parani", "Pooram", "Pooradam"],
-            "auspicious": false
+            "auspicious": false,
+            "meaning": "🚨 Indicates opposition, delays, and disturbances. 🚨"
         },
         {
             "tharai": "Success Tharai",
             "nakshatra_numbers": [6, 15, 24],
             "nakshatra_names": ["Karthikai", "Uthiram", "Uthiradam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Action-oriented Tharai that helps achieve goals and brings success."
         },
         {
             "tharai": "Struggle Tharai",
             "nakshatra_numbers": [7, 16, 25],
             "nakshatra_names": ["Rohini", "Astham", "Thiruvonam"],
-            "auspicious": false
+            "auspicious": false,
+            "meaning": "🚨 Represents pain and struggles; requires patience. 🚨"
         },
         {
             "tharai": "Friendship Tharai",
             "nakshatra_numbers": [8, 17, 26],
             "nakshatra_names": ["Mirugaseeridam", "Chithirai", "Avittam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Brings good relationships, friendships, and harmony."
         },
         {
             "tharai": "Best Friend Tharai",
             "nakshatra_numbers": [9, 18, 27],
             "nakshatra_names": ["Thiruvadhirai", "Swathi", "Sadhayam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Indicates deep friendships, strong bonds, and excellent support."
         }
     ],
     "Rohini": [
@@ -60,55 +69,64 @@
             "tharai": "Birth Tharai",
             "nakshatra_numbers": [1, 10, 19],
             "nakshatra_names": ["Rohini", "Astham", "Thiruvonam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Birth Nakshatra; signifies the fundamental nature of life and health."
         },
         {
             "tharai": "Wealth Tharai",
             "nakshatra_numbers": [2, 11, 20],
             "nakshatra_names": ["Mirugaseeridam", "Chithirai", "Avittam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Wealth-related Tharai; associated with financial growth and prosperity."
         },
         {
             "tharai": "Accident Tharai",
             "nakshatra_numbers": [3, 12, 21],
             "nakshatra_names": ["Thiruvadhirai", "Swathi", "Sadhayam"],
-            "auspicious": false
+            "auspicious": false,
+            "meaning": "🚨 Indicates challenges and obstacles in life. 🚨"
         },
         {
             "tharai": "Safety Tharai",
             "nakshatra_numbers": [4, 13, 22],
-            "nakshatra_names": ["Punarpoosam", "Vishakam", "Poorattathi"],
-            "auspicious": true
+            "nakshatra_names": ["Punarpoosam", "Vishakam", "Poorattadhi"],
+            "auspicious": true,
+            "meaning": "Provides good health, peace, and protection."
         },
         {
             "tharai": "Obstacle Tharai",
             "nakshatra_numbers": [5, 14, 23],
             "nakshatra_names": ["Poosam", "Anusham", "Uthirattathi"],
-            "auspicious": false
+            "auspicious": false,
+            "meaning": "🚨 Indicates opposition, delays, and disturbances. 🚨"
         },
         {
             "tharai": "Success Tharai",
             "nakshatra_numbers": [6, 15, 24],
             "nakshatra_names": ["Ayilyam", "Kettai", "Revathi"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Action-oriented Tharai that helps achieve goals and brings success."
         },
         {
             "tharai": "Struggle Tharai",
             "nakshatra_numbers": [7, 16, 25],
             "nakshatra_names": ["Aswini", "Magam", "Moolam"],
-            "auspicious": false
+            "auspicious": false,
+            "meaning": "🚨 Represents pain and struggles; requires patience. 🚨"
         },
         {
             "tharai": "Friendship Tharai",
             "nakshatra_numbers": [8, 17, 26],
             "nakshatra_names": ["Parani", "Pooram", "Pooradam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Brings good relationships, friendships, and harmony."
         },
         {
             "tharai": "Best Friend Tharai",
             "nakshatra_numbers": [9, 18, 27],
             "nakshatra_names": ["Karthikai", "Uthiram", "Uthiradam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Indicates deep friendships, strong bonds, and excellent support."
         }
     ],
     
@@ -117,55 +135,64 @@
             "tharai": "Birth Tharai",
             "nakshatra_numbers": [1, 10, 19],
             "nakshatra_names": ["Bharani", "Pooram", "Pooradam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Birth Nakshatra; signifies the fundamental nature of life and health."
         },
         {
             "tharai": "Wealth Tharai",
             "nakshatra_numbers": [2, 11, 20],
             "nakshatra_names": ["Karthikai", "Uthiram", "Uthiradam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Wealth-related Tharai; associated with financial growth and prosperity."
         },
         {
             "tharai": "Accident Tharai",
             "nakshatra_numbers": [3, 12, 21],
             "nakshatra_names": ["Rohini", "Astham", "Thiruvonam"],
-            "auspicious": false
+            "auspicious": false,
+            "meaning": "🚨 Indicates challenges and obstacles in life. 🚨"
         },
         {
             "tharai": "Safety Tharai",
             "nakshatra_numbers": [4, 13, 22],
             "nakshatra_names": ["Mirugaseeridam", "Chithirai", "Avittam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Provides good health, peace, and protection."
         },
         {
             "tharai": "Obstacle Tharai",
             "nakshatra_numbers": [5, 14, 23],
             "nakshatra_names": ["Thiruvadhirai", "Swathi", "Sadhayam"],
-            "auspicious": false
+            "auspicious": false,
+            "meaning": "🚨 Indicates opposition, delays, and disturbances. 🚨"
         },
         {
             "tharai": "Success Tharai",
             "nakshatra_numbers": [6, 15, 24],
-            "nakshatra_names": ["Punarpoosam", "Vishakam", "Poorattathi"],
-            "auspicious": true
+            "nakshatra_names": ["Punarpoosam", "Vishakam", "Poorattadhi"],
+            "auspicious": true,
+            "meaning": "Action-oriented Tharai that helps achieve goals and brings success."
         },
         {
             "tharai": "Struggle Tharai",
             "nakshatra_numbers": [7, 16, 25],
             "nakshatra_names": ["Poosam", "Anusham", "Uthirattathi"],
-            "auspicious": false
+            "auspicious": false,
+            "meaning": "🚨 Represents pain and struggles; requires patience. 🚨"
         },
         {
             "tharai": "Friendship Tharai",
             "nakshatra_numbers": [8, 17, 26],
             "nakshatra_names": ["Ayilyam", "Kettai", "Revathi"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Brings good relationships, friendships, and harmony."
         },
         {
             "tharai": "Best Friend Tharai",
             "nakshatra_numbers": [9, 18, 27],
             "nakshatra_names": ["Aswini", "Magam", "Moolam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Indicates deep friendships, strong bonds, and excellent support."
         }
     ],
 
@@ -174,55 +201,64 @@
             "tharai": "Birth Tharai",
             "nakshatra_numbers": [1, 10, 19],
             "nakshatra_names": ["Chithirai", "Avittam", "Mirugaseeridam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Birth Nakshatra; signifies the fundamental nature of life and health."
         },
         {
             "tharai": "Wealth Tharai",
             "nakshatra_numbers": [2, 11, 20],
             "nakshatra_names": ["Thiruvadhirai", "Swathi", "Sadhayam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Wealth-related Tharai; associated with financial growth and prosperity."
         },
         {
             "tharai": "Accident Tharai",
             "nakshatra_numbers": [3, 12, 21],
-            "nakshatra_names": ["Punarpoosam", "Vishakam", "Poorattathi"],
-            "auspicious": false
+            "nakshatra_names": ["Punarpoosam", "Vishakam", "Poorattadhi"],
+            "auspicious": false,
+            "meaning": "🚨 Indicates challenges and obstacles in life. 🚨"
         },
         {
             "tharai": "Safety Tharai",
             "nakshatra_numbers": [4, 13, 22],
             "nakshatra_names": ["Poosam", "Anusham", "Uthirattathi"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Provides good health, peace, and protection."
         },
         {
             "tharai": "Obstacle Tharai",
             "nakshatra_numbers": [5, 14, 23],
             "nakshatra_names": ["Ayilyam", "Kettai", "Revathi"],
-            "auspicious": false
+            "auspicious": false,
+            "meaning": "🚨 Indicates opposition, delays, and disturbances. 🚨"
         },
         {
             "tharai": "Success Tharai",
             "nakshatra_numbers": [6, 15, 24],
             "nakshatra_names": ["Aswini", "Magam", "Moolam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Action-oriented Tharai that helps achieve goals and brings success."
         },
         {
             "tharai": "Struggle Tharai",
             "nakshatra_numbers": [7, 16, 25],
             "nakshatra_names": ["Parani", "Pooram", "Pooradam"],
-            "auspicious": false
+            "auspicious": false,
+            "meaning": "🚨 Represents pain and struggles; requires patience. 🚨"
         },
         {
             "tharai": "Friendship Tharai",
             "nakshatra_numbers": [8, 17, 26],
             "nakshatra_names": ["Karthikai", "Uthiram", "Uthiradam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Brings good relationships, friendships, and harmony."
         },
         {
             "tharai": "Best Friend Tharai",
             "nakshatra_numbers": [9, 18, 27],
             "nakshatra_names": ["Rohini", "Astham", "Thiruvonam"],
-            "auspicious": true
+            "auspicious": true,
+            "meaning": "Indicates deep friendships, strong bonds, and excellent support."
         }
     ]
 }
