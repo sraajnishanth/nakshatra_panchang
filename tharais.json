@@ -1,0 +1,228 @@
+{
+    "Poorattathi": [
+        {
+            "tharai": "Birth Tharai",
+            "nakshatra_numbers": [1, 10, 19],
+            "nakshatra_names": ["Poorattathi", "Punarpoosam", "Vishakam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Wealth Tharai",
+            "nakshatra_numbers": [2, 11, 20],
+            "nakshatra_names": ["Uthirattathi", "Poosam", "Anusham"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Accident Tharai",
+            "nakshatra_numbers": [3, 12, 21],
+            "nakshatra_names": ["Revathi", "Ayilyam", "Kettai"],
+            "auspicious": false
+        },
+        {
+            "tharai": "Safety Tharai",
+            "nakshatra_numbers": [4, 13, 22],
+            "nakshatra_names": ["Aswini", "Magam", "Moolam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Obstacle Tharai",
+            "nakshatra_numbers": [5, 14, 23],
+            "nakshatra_names": ["Parani", "Pooram", "Pooradam"],
+            "auspicious": false
+        },
+        {
+            "tharai": "Success Tharai",
+            "nakshatra_numbers": [6, 15, 24],
+            "nakshatra_names": ["Karthikai", "Uthiram", "Uthiradam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Struggle Tharai",
+            "nakshatra_numbers": [7, 16, 25],
+            "nakshatra_names": ["Rohini", "Astham", "Thiruvonam"],
+            "auspicious": false
+        },
+        {
+            "tharai": "Friendship Tharai",
+            "nakshatra_numbers": [8, 17, 26],
+            "nakshatra_names": ["Mirugaseeridam", "Chithirai", "Avittam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Best Friend Tharai",
+            "nakshatra_numbers": [9, 18, 27],
+            "nakshatra_names": ["Thiruvadhirai", "Swathi", "Sadhayam"],
+            "auspicious": true
+        }
+    ],
+    "Rohini": [
+        {
+            "tharai": "Birth Tharai",
+            "nakshatra_numbers": [1, 10, 19],
+            "nakshatra_names": ["Rohini", "Astham", "Thiruvonam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Wealth Tharai",
+            "nakshatra_numbers": [2, 11, 20],
+            "nakshatra_names": ["Mirugaseeridam", "Chithirai", "Avittam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Accident Tharai",
+            "nakshatra_numbers": [3, 12, 21],
+            "nakshatra_names": ["Thiruvadhirai", "Swathi", "Sadhayam"],
+            "auspicious": false
+        },
+        {
+            "tharai": "Safety Tharai",
+            "nakshatra_numbers": [4, 13, 22],
+            "nakshatra_names": ["Punarpoosam", "Vishakam", "Poorattathi"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Obstacle Tharai",
+            "nakshatra_numbers": [5, 14, 23],
+            "nakshatra_names": ["Poosam", "Anusham", "Uthirattathi"],
+            "auspicious": false
+        },
+        {
+            "tharai": "Success Tharai",
+            "nakshatra_numbers": [6, 15, 24],
+            "nakshatra_names": ["Ayilyam", "Kettai", "Revathi"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Struggle Tharai",
+            "nakshatra_numbers": [7, 16, 25],
+            "nakshatra_names": ["Aswini", "Magam", "Moolam"],
+            "auspicious": false
+        },
+        {
+            "tharai": "Friendship Tharai",
+            "nakshatra_numbers": [8, 17, 26],
+            "nakshatra_names": ["Parani", "Pooram", "Pooradam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Best Friend Tharai",
+            "nakshatra_numbers": [9, 18, 27],
+            "nakshatra_names": ["Karthikai", "Uthiram", "Uthiradam"],
+            "auspicious": true
+        }
+    ],
+    
+    "Bharani": [
+        {
+            "tharai": "Birth Tharai",
+            "nakshatra_numbers": [1, 10, 19],
+            "nakshatra_names": ["Bharani", "Pooram", "Pooradam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Wealth Tharai",
+            "nakshatra_numbers": [2, 11, 20],
+            "nakshatra_names": ["Karthikai", "Uthiram", "Uthiradam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Accident Tharai",
+            "nakshatra_numbers": [3, 12, 21],
+            "nakshatra_names": ["Rohini", "Astham", "Thiruvonam"],
+            "auspicious": false
+        },
+        {
+            "tharai": "Safety Tharai",
+            "nakshatra_numbers": [4, 13, 22],
+            "nakshatra_names": ["Mirugaseeridam", "Chithirai", "Avittam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Obstacle Tharai",
+            "nakshatra_numbers": [5, 14, 23],
+            "nakshatra_names": ["Thiruvadhirai", "Swathi", "Sadhayam"],
+            "auspicious": false
+        },
+        {
+            "tharai": "Success Tharai",
+            "nakshatra_numbers": [6, 15, 24],
+            "nakshatra_names": ["Punarpoosam", "Vishakam", "Poorattathi"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Struggle Tharai",
+            "nakshatra_numbers": [7, 16, 25],
+            "nakshatra_names": ["Poosam", "Anusham", "Uthirattathi"],
+            "auspicious": false
+        },
+        {
+            "tharai": "Friendship Tharai",
+            "nakshatra_numbers": [8, 17, 26],
+            "nakshatra_names": ["Ayilyam", "Kettai", "Revathi"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Best Friend Tharai",
+            "nakshatra_numbers": [9, 18, 27],
+            "nakshatra_names": ["Aswini", "Magam", "Moolam"],
+            "auspicious": true
+        }
+    ],
+
+    "Chithirai": [
+        {
+            "tharai": "Birth Tharai",
+            "nakshatra_numbers": [1, 10, 19],
+            "nakshatra_names": ["Chithirai", "Avittam", "Mirugaseeridam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Wealth Tharai",
+            "nakshatra_numbers": [2, 11, 20],
+            "nakshatra_names": ["Thiruvadhirai", "Swathi", "Sadhayam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Accident Tharai",
+            "nakshatra_numbers": [3, 12, 21],
+            "nakshatra_names": ["Punarpoosam", "Vishakam", "Poorattathi"],
+            "auspicious": false
+        },
+        {
+            "tharai": "Safety Tharai",
+            "nakshatra_numbers": [4, 13, 22],
+            "nakshatra_names": ["Poosam", "Anusham", "Uthirattathi"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Obstacle Tharai",
+            "nakshatra_numbers": [5, 14, 23],
+            "nakshatra_names": ["Ayilyam", "Kettai", "Revathi"],
+            "auspicious": false
+        },
+        {
+            "tharai": "Success Tharai",
+            "nakshatra_numbers": [6, 15, 24],
+            "nakshatra_names": ["Aswini", "Magam", "Moolam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Struggle Tharai",
+            "nakshatra_numbers": [7, 16, 25],
+            "nakshatra_names": ["Parani", "Pooram", "Pooradam"],
+            "auspicious": false
+        },
+        {
+            "tharai": "Friendship Tharai",
+            "nakshatra_numbers": [8, 17, 26],
+            "nakshatra_names": ["Karthikai", "Uthiram", "Uthiradam"],
+            "auspicious": true
+        },
+        {
+            "tharai": "Best Friend Tharai",
+            "nakshatra_numbers": [9, 18, 27],
+            "nakshatra_names": ["Rohini", "Astham", "Thiruvonam"],
+            "auspicious": true
+        }
+    ]
+}
