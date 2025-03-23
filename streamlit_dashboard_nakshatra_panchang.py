@@ -496,7 +496,6 @@ query_params = st.query_params
 # Extract the 'nakshatra' parameter if present (case insensitive)
 # nakshatra_param = query_params.get("nakshatra", [None])[0]
 nakshatra_param = None if "nakshatra" not in query_params else query_params["nakshatra"]
-st.write(f"Index: {nakshatra_param}")
 
 if nakshatra_param is not None:
     nakshatra_param = nakshatra_param.lower()
