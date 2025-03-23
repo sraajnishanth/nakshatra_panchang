@@ -45,7 +45,7 @@
         {
             "tharai": "Struggle Tharai",
             "nakshatra_numbers": [7, 16, 25],
-            "nakshatra_names": ["Rohini", "Astham", "Thiruvonam"],
+            "nakshatra_names": ["Rohini", "Astham", "Tiruvonam"],
             "auspicious": false,
             "meaning": "🚨 Represents pain and struggles; requires patience. 🚨"
         },
@@ -68,7 +68,7 @@
         {
             "tharai": "Birth Tharai",
             "nakshatra_numbers": [1, 10, 19],
-            "nakshatra_names": ["Rohini", "Astham", "Thiruvonam"],
+            "nakshatra_names": ["Rohini", "Astham", "Tiruvonam"],
             "auspicious": true,
             "meaning": "Birth Nakshatra; signifies the fundamental nature of life and health."
         },
@@ -148,7 +148,7 @@
         {
             "tharai": "Accident Tharai",
             "nakshatra_numbers": [3, 12, 21],
-            "nakshatra_names": ["Rohini", "Astham", "Thiruvonam"],
+            "nakshatra_names": ["Rohini", "Astham", "Tiruvonam"],
             "auspicious": false,
             "meaning": "🚨 Indicates challenges and obstacles in life. 🚨"
         },
@@ -256,7 +256,7 @@
         {
             "tharai": "Best Friend Tharai",
             "nakshatra_numbers": [9, 18, 27],
-            "nakshatra_names": ["Rohini", "Astham", "Thiruvonam"],
+            "nakshatra_names": ["Rohini", "Astham", "Tiruvonam"],
             "auspicious": true,
             "meaning": "Indicates deep friendships, strong bonds, and excellent support."
         }
